@@ -1,0 +1,15 @@
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+# Course-provided files are kept byte-for-byte (apart from a provenance header).
+extend-exclude = [
+    "src/nesy/__init__.py",
+    "src/nesy/logic.py",
+    "src/nesy/semantics.py",
+    "src/nesy/term.py",
+    "src/nesy/parser/",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]
